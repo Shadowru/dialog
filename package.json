@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js index.js",
-    "start": "DEBUG=${DEBUG:='*mediasoup* *INFO* *WARN* *ERROR*'} INTERACTIVE=${INTERACTIVE:='true'} node index.js"
+    "start": "DEBUG=${DEBUG:='*mediasoup* *INFO* *WARN* *ERROR*'} INTERACTIVE=${INTERACTIVE:='true'} node index.js",
     "prod": "MEDIASOUP_LISTEN_IP=0.0.0.0 MEDIASOUP_ANNOUNCED_IP=94.139.253.232 HTTPS_CERT_FULLCHAIN=/etc/letsencrypt/live/hubs3.arvr.sberlabs.com/fullchain.pem HTTPS_CERT_PRIVKEY=/etc/letsencrypt/live/hubs3.arvr.sberlabs.com/privkey.pem DOMAIN=hubs3.arvr.sberlabs.com node index.js"
   },
   "dependencies": {
